@@ -5,20 +5,20 @@
 class Pine < Formula
   desc "Sync Claude Code skills, plugins, settings and secrets across machines via GitHub"
   homepage "https://github.com/ramesht007/pineapple-cli"
-  version "0.2.3"
+  version "0.2.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.3/pine_0.2.3_darwin_amd64.tar.gz"
-      sha256 "02dfabd3926e96a9c5a7abab2bef33e3443983c65529978f023da2b335a5b7e2"
+      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.4/pine_0.2.4_darwin_amd64.tar.gz"
+      sha256 "263d5102e4b7b8c79803315f33fceeca9ec7cefd94d1a2c61d8260f1afaa937d"
 
       define_method(:install) do
         bin.install "pine"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.3/pine_0.2.3_darwin_arm64.tar.gz"
-      sha256 "264d09b51e38c65eb7fc19135e4090618af765587039998ab15d2e8e8681e840"
+      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.4/pine_0.2.4_darwin_arm64.tar.gz"
+      sha256 "8448dd2e207f8135d02065111e0d14b4ec08daf9f7d2b97eda84661a4e3773d9"
 
       define_method(:install) do
         bin.install "pine"
@@ -28,15 +28,15 @@ class Pine < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.3/pine_0.2.3_linux_amd64.tar.gz"
-      sha256 "671a53260d0179dacded435be7313540da2760bf308d07d9f08a6e73f3d9bfe3"
+      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.4/pine_0.2.4_linux_amd64.tar.gz"
+      sha256 "d46b9be7741b1d462af4ed6f1e6206c909d76e3e3167d9712b07c8f14a787e60"
       define_method(:install) do
         bin.install "pine"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.3/pine_0.2.3_linux_arm64.tar.gz"
-      sha256 "f80646369ec16f99da007f67861093c454871ba2f609be00ec93e47ca34c78d1"
+      url "https://github.com/ramesht007/pineapple-cli/releases/download/v0.2.4/pine_0.2.4_linux_arm64.tar.gz"
+      sha256 "adec65a1ac2f2e12cb159a3f84f8cb602c4952c2e659da46ec04b061d93a639c"
       define_method(:install) do
         bin.install "pine"
       end
